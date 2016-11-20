@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle debugger-toolbar",
+        "command": "debugger-toolbar:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "debugger-toolbar",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "debugger-toolbar:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

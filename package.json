@@ -1,0 +1,30 @@
+{
+  "name": "debugger-toolbar",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "A toolbar for debugging",
+  "keywords": [
+    "debugging",
+    "toolbar"
+  ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.3.0"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0 || ^1": "consumeToolBar"
+      }
+    }
+  },
+  "devDependencies": {
+    "webfont": "^7.0.0"
+  },
+  "scripts": {
+    "prepublish": "webfont -d resources/fonts -s styles -t css -f debug-icons -p 'atom://debugger-toolbar/resources/fonts/' resources/debug-icons/*.svg"
+  }
+}
